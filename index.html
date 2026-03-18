@@ -108,19 +108,22 @@
       100% { opacity: 1; }
     }
 
-    .phoenix-wrap {
-      position: relative;
-      width: min(380px, 80vw);
-      mix-blend-mode: screen;
-      mask-image: radial-gradient(circle, black 60%, transparent 100%);
-  -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%);
+    /* Container for the image assets */
+    .hacker-squad-wrap {
+        display: block;
+        margin: 2rem auto;
+        position: relative;
+        width: min(500px, 95vw); 
     }
 
-    .phoenix-wrap img {
-      width: 100%;
-      display: block;
-      filter: drop-shadow(0 0 32px rgba(200,60,0,0.6)) drop-shadow(0 0 80px rgba(200,60,0,0.25));
-      animation: phoenixPulse 4s ease-in-out infinite;
+    .hacker-squad-wrap img {
+        width: 100%;
+        display: block;
+        height: auto;
+        filter: 
+            drop-shadow(0 0 15px rgba(255, 120, 0, 0.65))
+            drop-shadow(0 0 45px rgba(255, 60, 0, 0.3));
+        animation: phoenixPulse 4s ease-in-out infinite;
     }
 
     @keyframes phoenixPulse {
@@ -423,7 +426,7 @@
   <!-- ══ SECTION 1: HERO ══════════════════════════════════ -->
   <section id="hero">
     <div class="hero-inner">
-      <div class="phoenix-wrap" style="background-color: #000000; padding: 20px;">
+      <div class="hacker-squad-wrap">
         <img src="Assets/pixel-phoenix-transparent.png" alt="DC415 Phoenix" />
       </div>
       <!-- <h1 class="hero-title">A Monthly Security Meetup in San Francisco</h1> -->
@@ -448,14 +451,19 @@
   <!-- ══ SECTION 2: WHEN ══════════════════════════════════ -->
   <section id="when">
     <div class="when-inner">
+      <div class="hacker-squad-wrap">
+        <img src="Assets/terminal-transparent.png" alt="DC415 Terminal" />
+      </div>
+      <br>
       <p class="section-eyebrow reveal">next_session.log</p>
       <h2 class="when-headline reveal reveal-delay-1">
         Every Second Thursday<br>
-        <span class="pipe">|</span>19:30<span class="pipe">|</span>
-        <a class="location-link" href="https://noisebridge.net" target="_blank" rel="noopener">NoiseBridge</a>
+        <span class="pipe">|</span>19:30<span class="pipe">|</span>@
+        <a class="location-link" href="https://noisebridge.net" target="_blank" rel="noopener">NoiseBridge</a><br>
+        <a class="location-link" href="https://www.meetup.com/noisebridge/events/313738742/" target="_blank" rel="noopener">Meetup</a>
       </h2>
       <p class="when-detail reveal reveal-delay-2">
-        2169 Mission St, San Francisco, CA 94110<span class="terminal-blink"></span>
+        272 Capp St, San Francisco, CA 94110<span class="terminal-blink"></span>
       </p>
     </div>
   </section>
@@ -465,6 +473,10 @@
   <!-- ══ SECTION 3: ABOUT ══════════════════════════════════ -->
   <section id="about">
     <div class="about-inner">
+      <div class="hacker-squad-wrap">
+        <img src="Assets/pixel-pcb-transparent.png" alt="DC415 PCB" />
+      </div>
+      <br><br>
       <div class="section-header reveal">
         <span class="section-title">// About Us</span>
         <div class="line"></div>
@@ -488,6 +500,9 @@
   <!-- ══ SECTION 4: CONTACT ════════════════════════════════ -->
   <section id="contact">
     <div class="contact-inner">
+      <div class="hacker-squad-wrap">
+        <img src="Assets/hacker-squad-transparent.png" alt="DC415 Hacker Squad" />
+      </div>
       <div class="section-header reveal" style="justify-content:center;">
         <div class="line" style="background: linear-gradient(to left, var(--red-dim), transparent);"></div>
         <span class="section-title">// Contact</span>
